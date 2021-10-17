@@ -21,6 +21,11 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
 getData();
 
 function logout() {
-      
+      window.location = "index.html";
 }
 
+var username = localStorage.getItem("loginword");
+
+console.log("username = "+username);
+
+document.getElementById("welcome").innerHTML = "<h3>Welcome "+username+"!<h3>";

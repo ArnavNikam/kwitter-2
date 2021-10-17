@@ -1,5 +1,5 @@
 function login() {
     username = document.getElementById("login_input").value;
-    localStorage.setItem("login word", username);
+    localStorage.setItem("loginword", username);
     window.location = "kwitter_room.html";
 }
